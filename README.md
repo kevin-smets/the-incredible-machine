@@ -49,18 +49,14 @@ BrowserSync is used as a proxy for live reloading and syncing events across brow
 ```
 cordova prepare
 
-cordova run android [--livereload] [--no-merge]
-cordova run ios [--livereload] [--device] [--no-merge]
+cordova run android [--livereload]
+cordova run ios [--livereload] [--device]
 ```
 
 --livereload:
 
 1. `npm start` needs to run actively
 1. both devices need to be on the same network.
-
---no-merge
-
-If you do not have any [platform specific files](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform), you can add this flag. This will speed up live reloading as it skips the `cordova generate` step.
 
 --device
 
