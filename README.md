@@ -37,12 +37,14 @@ Files in `merges` and `www` are monitored for changes and will trigger the appro
 ### Browser / desktop only
 
 ```
-bin/tim
+bin/tim [--no-merge]
 ```
 
 TIM will serve you at **[localhost:3000](http://localhost:3000)**
 
 BrowserSync is used as a proxy for live reloading and syncing events across browser instances.
+
+--no-merge is explained below.
 
 ### Mobile devices or emulators
 
@@ -61,6 +63,8 @@ cordova run ios [--livereload] [--device] [--no-merge]
 --no-merge
 
 If you do not have any [platform specific files](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#using-merges-to-customize-each-platform), you can add this flag. This will speed up live reloading as it skips the `cordova generate` step.
+
+You'll need to have started tim with this flag as well: `tim --no-merge`
 
 --device
 

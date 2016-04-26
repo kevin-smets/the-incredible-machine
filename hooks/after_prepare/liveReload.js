@@ -28,10 +28,17 @@ module.exports = function (context) {
             var configPath = undefined;
             var urlEnd = platform + '/www/index.html';
 
+            // --no-merge flag
+            if (!(argv.merge === false)) {
+                console.log('Running with merges');
+            } else {
+                console.log('Running without merges');
+                urlEnd = 'browser/www/index.html';
+            }
+
             switch (platform) {
                 case 'android':
                     configPath = './platforms/android/res/xml/config.xml';
-                    urlEnd = platform + '/www/index.html';
                     break;
                 case 'ios':
                     configPath = `./platforms/ios/${config.name()}/config.xml`;
