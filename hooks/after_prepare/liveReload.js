@@ -33,7 +33,7 @@ module.exports = function (context) {
                 console.log('Running with merges');
             } else {
                 console.log('Running without merges');
-                urlEnd = 'browser/www/index.html';
+                urlEnd = 'index.html';
             }
 
             switch (platform) {
