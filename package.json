@@ -1,6 +1,6 @@
 {
   "name": "the-incredible-machine",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "bin": {
     "tim": "bin/tim.js"
@@ -11,7 +11,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "2.12.3",
     "fs-extra": "0.28.0",
     "shelljs": "0.6.0",
