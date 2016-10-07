@@ -1,23 +1,5 @@
 # T.I.M. - The Incredible Machine
 
-Clone this repo and in the root folder, run
-
-```
-npm link
-```
-
-Then in your project, run
-
-```
-npm link the-incredible-machine
-```
-
-Install Cordova into your project. T.I.M. is compatible with Cordova >= 6.0.0.
-
-```
-npm i -D cordova
-```
-
 ### Hooks
 
 The following Cordova hooks are provided by T.I.M.
