@@ -5,16 +5,14 @@
 The following Cordova hooks are provided by T.I.M.
 
 ```
-<hook type="after_prepare" src="node_modules/the-incredible-machine/hooks/after_prepare/iOsPlistIBeaconFix.js" />
 <hook type="after_prepare" src="node_modules/the-incredible-machine/hooks/after_prepare/liveReload.js" />
 ```
 
-- iOsPlistIBeaconFix: adds "location" to the background modes of your iOS app if it's not added already. Required if you use iBeacon with WkWebView. [More info](https://github.com/petermetz/cordova-plugin-ibeacon/issues/212).
-- liveReload: will enable live reload for Android and iOS
+- liveReload: will enable live reload for the browser, Android and iOS
 
 ## Run T.I.M.
 
-Files in `merges` and `www` are monitored for changes and will trigger the appropriate reloads. It's your responsibility to get them there :).
+Files in `merges` and `www` are monitored for changes and will trigger the appropriate reloads. Cordova should get them there :).
 
 ### Browser / desktop only
 
